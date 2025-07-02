@@ -1,3 +1,11 @@
 While connecting with db keep these 2 things in mind (Good Practices)
 1) while connecting you CAN face problem hence write the code in 'try catch block' or 'promises' in a way that you can handle any errors 
 2) "db is in another continent" - Talking (communicating) with db takes time. So you will have to apply 'async await' 
+
+
+
+app.use(cors())             we use the word app."use" generally when we are doing middleware or cofiguration settings 
+
+
+More on Status Codes : https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status
+
