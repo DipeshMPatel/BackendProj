@@ -26,3 +26,4 @@ mongoose.model("User", userSchema)  // Here in in Mongo db "User" will be stored
 
 JWT is a bearer token : “Whoever holds this token (‘bears’ it) is authorized to access the resource.”
 
+--------------------------------------------------------------------------
