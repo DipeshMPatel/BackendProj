@@ -1,11 +1,28 @@
+--------------------------------------------------------------------------
 While connecting with db keep these 2 things in mind (Good Practices)
 1) while connecting you CAN face problem hence write the code in 'try catch block' or 'promises' in a way that you can handle any errors 
 2) "db is in another continent" - Talking (communicating) with db takes time. So you will have to apply 'async await' 
 
-
+--------------------------------------------------------------------------
 
 app.use(cors())             we use the word app."use" generally when we are doing middleware or cofiguration settings 
 
-
+--------------------------------------------------------------------------
 More on Status Codes : https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status
+
+
+--------------------------------------------------------------------------
+
+import mongoose, {Schema} from "mongoose";
+
+const userSchema = new Schema({})
+
+export const User = 
+mongoose.model("User", userSchema)  // Here in in Mongo db "User" will be stored as "users" (lowercase and in plural)
+                                    // also mongodb is intelligent enough that if you give "Categories", it will be stored as "categories", 
+                                    // However while writing it in the code we generally write singular form only 
+
+--------------------------------------------------------------------------                                
+
+JWT is a bearer token : “Whoever holds this token (‘bears’ it) is authorized to access the resource.”
 
